@@ -15,7 +15,8 @@ function StarRatingExample({ theme }) {
           maxStars={10}
           starSize={48}
           isEditable={true}
-          rating={4}
+          isRoundValue={true} //interview test code
+          rating={2.2}
           activeColor="#ff0000"
           backgroundColor="#000000"
         />

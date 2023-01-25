@@ -40,6 +40,9 @@ export const SEED_DATA = {
     isEditable: createStaticBoolProp({
       label: "Editable",
     }),
+    isRoundValue: createStaticBoolProp({
+      label: "Round Value?", //new prop for interview test
+    }),
     activeColor: createColorProp({
       label: "Active Color",
       defaultValue: "primary",

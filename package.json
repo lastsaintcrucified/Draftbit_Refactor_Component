@@ -60,6 +60,15 @@
     "yarn-deduplicate": "^3.1.0"
   },
   "eslintConfig": {
+    
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+  "requireConfigFile": false, 
+  "sourceType": "module" ,
+  "babelOptions": {
+    "presets": ["@babel/preset-react"]
+ }
+},
     "extends": [
       "@react-native-community",
       "prettier"

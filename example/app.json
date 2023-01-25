@@ -1,5 +1,8 @@
 {
   "name": "@draftbit/ui-example",
+  "packagerOpts": {
+    "sourceExts": ["js", "json", "ts", "tsx", "jsx", "vue"]
+  },
   "displayName": "Ui Example",
   "expo": {
     "name": "@draftbit/ui-example",

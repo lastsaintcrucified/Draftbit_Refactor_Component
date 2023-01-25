@@ -16,6 +16,7 @@ type Props = {
   rating?: number;
   defaultValue?: number;
   isEditable?: boolean;
+  isRoundValue?: boolean; //interview test code
   activeColor?: string;
   inactiveColor?: string;
   theme: Theme;
@@ -30,6 +31,7 @@ const StarRating: React.FC<React.PropsWithChildren<Props>> = ({
   rating = 0,
   defaultValue,
   isEditable = false,
+  isRoundValue = false, //interview test code
   activeColor,
   inactiveColor,
   style,
@@ -42,7 +44,7 @@ const StarRating: React.FC<React.PropsWithChildren<Props>> = ({
 
   React.useEffect(() => {
     if (rating != null) {
-      setLocalRating(rating);
+      setLocalRating(!isRoundValue ? rating : Math.round(rating)); //interview test code
     }
   }, [rating]);
 

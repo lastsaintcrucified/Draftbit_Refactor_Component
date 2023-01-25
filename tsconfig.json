@@ -1,5 +1,7 @@
 {
   "exclude": ["example/**"],
+  "allowSyntheticDefaultImports": true,
+  "esModuleInterop": true,
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
